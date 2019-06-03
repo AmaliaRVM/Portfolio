@@ -7,9 +7,9 @@ body{
     display: grid;
     margin: auto;
     margin-top:50px;
-    width: 70vw; 
-    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
-    /* grid-template-rows: auto auto auto auto; */
+    width: 70vw;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-template-rows: auto auto auto auto;
     grid-gap: 1rem;
     list-style-type:none;
     font-family: 'Montserrat', sans-serif;
