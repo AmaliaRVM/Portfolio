@@ -1,14 +1,65 @@
 body{
-    margin: 0;
     background:#eae9e5;
+    margin: 0;
 }
-header{
-    font-family:'Montserrat', sans-serif;
-}
-ul{
+
+.mainContainer{
     display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(200px,1fr));
+    margin: auto;
+    margin-top:50px;
+    width: 70vw; 
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    /* grid-template-rows: auto auto auto auto; */
+    grid-gap: 1rem;
     list-style-type:none;
     font-family: 'Montserrat', sans-serif;
 }
+h1{
+    grid-column: 2;
+    text-align: right;
+    font-size: 45px;
+}
+h2{
+    color: rgb(128, 8, 8);
+    writing-mode: vertical-lr;
+    grid-column: 3;
+    grid-row: 2 / 4;
+}
+.about{
+    grid-column: 1;
+    grid-row: 2 / 3;
+    line-height: 1.6;
+}
+.portfolio{
+    grid-column: 4;
+    grid-row: 2;
+    transform: rotate(-35deg);
+}
+h3{
+    border-top: 5px solid black;
+    padding: 10px;
+}
+#contactInfo{
+    line-height: 1.6;
+}
+.line{
+    grid-column: 2 / 3;
+    grid-row: 5;
+    border-bottom: 15px solid rgb(128, 8, 8);  
+}
+.linkOne{
+    grid-column: 3;
+    grid-row: 5;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+.linkTwo{
+    grid-column: 3;
+    grid-row: 5;
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 50px;
+    color: black;
+}
+
